@@ -10,7 +10,7 @@ import io.github.jwgibanez.contacts.data.model.User
 @Dao
 interface UserDao {
 
-    @Query("SELECT * FROM user ORDER BY id ASC")
+    @Query("SELECT * FROM user ORDER BY name ASC")
     fun all(): LiveData<List<User>>
 
     @Query("SELECT * FROM user WHERE id = :id")
