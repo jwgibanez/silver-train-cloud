@@ -5,10 +5,8 @@ import androidx.recyclerview.widget.DiffUtil
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import io.github.jwgibanez.contacts.data.model.User
-import io.github.jwgibanez.contacts.viewmodel.ContactsViewModel
 
 class ListAdapter(
-    private val viewModel: ContactsViewModel,
     private val onItemClick: (User) -> Unit,
     diffCallback: DiffUtil.ItemCallback<User>
 ) : ListAdapter<User, ItemViewHolder?>(diffCallback) {

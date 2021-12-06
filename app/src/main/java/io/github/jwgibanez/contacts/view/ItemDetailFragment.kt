@@ -93,7 +93,7 @@ class ItemDetailFragment : Fragment() {
 
             address.geo?.let { geo ->
                 pairs.add(InfoAdapter.ValuePair("geo.lat", geo.lat))
-                pairs.add(InfoAdapter.ValuePair("geo.suite", geo.lng))
+                pairs.add(InfoAdapter.ValuePair("geo.lng", geo.lng))
             }
         }
 

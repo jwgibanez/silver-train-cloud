@@ -41,7 +41,7 @@ class ItemListFragment : Fragment() {
 
         val layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 
-        val adapter = ListAdapter(viewModel, { user -> onItemClick(user) }, ListAdapter.Diff())
+        val adapter = ListAdapter({ user -> onItemClick(user) }, ListAdapter.Diff())
         adapter.registerAdapterDataObserver(object : AdapterDataObserver() {
             override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
                 // Scroll to newly added item
