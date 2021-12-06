@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Contacts</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="require_permission_call">App needs permission to make a call.</string>
+    <string name="generic_error_message">An error occurred.</string>
+    <string name="message_no_internet_connection">No internet connection.</string>
 </resources>

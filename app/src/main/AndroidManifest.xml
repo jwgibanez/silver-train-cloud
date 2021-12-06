@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="io.github.jwgibanez.contacts">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,14 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Contacts">
         <activity
-            android:name=".ItemDetailHostActivity"
+            android:name=".io.github.jwgibanez.contacts.view.ItemDetailHostActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:resizeableActivity="true"
             tools:targetApi="24">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

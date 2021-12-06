@@ -1,4 +1,4 @@
-package io.github.jwgibanez.contacts.placeholder
+package io.github.jwgibanez.contacts.io.github.jwgibanez.contacts.view
 
 import java.util.ArrayList
 import java.util.HashMap
