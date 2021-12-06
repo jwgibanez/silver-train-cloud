@@ -55,3 +55,7 @@ To run all test, attach device to adb and run
 ```
 $ ./gradlew connectedAndroidTest
 ```
+
+## CI/CD
+
+On every commit to `main`, automated build is done by Github Actions to check the app is building successfully.
