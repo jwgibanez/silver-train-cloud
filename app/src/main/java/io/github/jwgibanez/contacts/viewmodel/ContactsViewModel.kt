@@ -37,7 +37,7 @@ class ContactsViewModel @Inject constructor(
         _loading.value = false
     }
 
-    fun fetchUsers(activity: Activity) {
+    fun fetchUsers(activity: Activity?) {
         viewModelScope.launch {
             val result = repository.fetchUsers(activity)
             if (result is Result.Error) {
