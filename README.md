@@ -2,6 +2,12 @@
 
 Maintainer: Juan Wilfredo Gales Ibañez
 
+<p float="left">
+  <img src="/screenshots/contacts-list.jpg" height=500>
+  <img src="/screenshots/contacts-details.jpg" height=500>
+</p>
+
+
 This simple app enables users the following:
 
 #### User List Page
